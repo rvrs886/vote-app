@@ -2,7 +2,7 @@ package gl.rvrs.voteapp;
 
 import gl.rvrs.voteapp.election.repository.CandidateRepository;
 import gl.rvrs.voteapp.election.repository.ElectionRepository;
-import gl.rvrs.voteapp.election.service.ElectionService;
+import gl.rvrs.voteapp.election.service.ElectionServiceImpl;
 import gl.rvrs.voteapp.users.repo.VoterRepository;
 import gl.rvrs.voteapp.users.service.PasswordEncoder;
 import gl.rvrs.voteapp.users.service.VoterService;
@@ -29,7 +29,7 @@ public abstract class IntegrationTestBase {
 	protected ElectionRepository electionRepository;
 
 	@Autowired
-	protected ElectionService electionService;
+	protected ElectionServiceImpl electionService;
 
 	@Autowired
 	protected CandidateRepository candidateRepository;

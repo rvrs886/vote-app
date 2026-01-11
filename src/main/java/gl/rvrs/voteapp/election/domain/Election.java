@@ -1,9 +1,7 @@
 package gl.rvrs.voteapp.election.domain;
 
-import gl.rvrs.voteapp.users.domain.Voter;
 import jakarta.persistence.*;
 
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;

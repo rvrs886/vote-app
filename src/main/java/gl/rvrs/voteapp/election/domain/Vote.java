@@ -1,5 +1,6 @@
 package gl.rvrs.voteapp.election.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import gl.rvrs.voteapp.users.domain.Voter;
 import jakarta.persistence.*;
 
@@ -19,6 +20,7 @@ public class Vote {
 	@OneToOne
 	private Candidate choice;
 
+	@JsonIgnore
 	@ManyToOne
 	@JoinColumn(name = "voter_id", nullable = false)
 	private Voter voter;
