@@ -2,14 +2,11 @@ package gl.rvrs.voteapp.election.controller;
 
 import gl.rvrs.voteapp.IntegrationTestBase;
 import gl.rvrs.voteapp.election.domain.Election;
-import gl.rvrs.voteapp.election.dto.ElectionDto;
+import gl.rvrs.voteapp.election.web.dto.ElectionDto;
 import org.apache.commons.lang3.RandomStringUtils;
-import org.assertj.core.api.Assertions;
-import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
-import org.springframework.test.web.servlet.MvcResult;
 import tools.jackson.databind.ObjectMapper;
 
 import java.util.List;

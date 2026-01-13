@@ -1,5 +1,6 @@
 package gl.rvrs.voteapp.election.domain;
 
+import gl.rvrs.voteapp.election.domain.voting.Vote;
 import jakarta.persistence.*;
 
 import java.util.ArrayList;
@@ -34,6 +35,11 @@ public class Election {
 		this.candidates = candidates;
 	}
 
+	public Election(String title, String description) {
+		this.title = title;
+		this.description = description;
+	}
+
 	public Long getId() {
 		return id;
 	}
@@ -56,6 +62,11 @@ public class Election {
 
 	public void addVote(Vote vote) {
 		this.votes.add(vote);
+	}
+
+	public void addCandidate(String candidateName) {
+		Candidate candidate = new Candidate(candidateName);
+		candidates.add(candidate);
 	}
 
 	@Override

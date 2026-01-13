@@ -2,8 +2,8 @@ package gl.rvrs.voteapp.election.controller;
 
 import gl.rvrs.voteapp.election.domain.Candidate;
 import gl.rvrs.voteapp.election.domain.Election;
-import gl.rvrs.voteapp.election.domain.Vote;
-import gl.rvrs.voteapp.election.repository.ElectionRepository;
+import gl.rvrs.voteapp.election.domain.voting.Vote;
+import gl.rvrs.voteapp.election.persistence.ElectionRepository;
 
 import java.util.ArrayList;
 import java.util.List;

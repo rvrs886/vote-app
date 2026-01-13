@@ -1,11 +1,11 @@
 package gl.rvrs.voteapp;
 
-import gl.rvrs.voteapp.election.repository.CandidateRepository;
-import gl.rvrs.voteapp.election.repository.ElectionRepository;
-import gl.rvrs.voteapp.election.service.ElectionServiceImpl;
-import gl.rvrs.voteapp.users.repo.VoterRepository;
-import gl.rvrs.voteapp.users.service.PasswordEncoder;
-import gl.rvrs.voteapp.users.service.VoterService;
+import gl.rvrs.voteapp.election.persistence.CandidateRepository;
+import gl.rvrs.voteapp.election.persistence.ElectionRepository;
+import gl.rvrs.voteapp.election.application.ElectionServiceImpl;
+import gl.rvrs.voteapp.users.persistence.VoterRepository;
+import gl.rvrs.voteapp.users.application.security.PasswordEncoder;
+import gl.rvrs.voteapp.users.application.VoterService;
 import org.junit.jupiter.api.BeforeEach;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
